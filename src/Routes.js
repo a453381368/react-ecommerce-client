@@ -14,6 +14,7 @@ import AdminDashboard from "./user/AdminDashboard";
 import AddCategory from "./admin/AddCategory";
 import AddProduct from "./admin/AddProduct";
 import Orders from "./admin/Orders";
+import ManageProducts from "./admin/ManageProducts";
 
 const Routes = () => {
     return (
@@ -51,6 +52,11 @@ const Routes = () => {
                     path="/profile/:userId"
                     exact
                     component={Profile}
+                />
+                <AdminRoute
+                    path="/admin/products"
+                    exact
+                    component={ManageProducts}
                 />
             </Switch>
         </Router>
